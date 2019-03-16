@@ -5,7 +5,7 @@ export default new phtml.Plugin('phtml-image-alt', opts => {
 	const hasAlts = Boolean(Object.keys(alts).length);
 
 	return {
-		Element(node) {
+		Element (node) {
 			if (/img/i.test(node.name)) {
 				const hasAlt = node.attrs.contains('alt');
 
